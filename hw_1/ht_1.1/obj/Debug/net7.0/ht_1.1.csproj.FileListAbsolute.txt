@@ -1,0 +1,15 @@
+/Users/er/CS_HT/cs_ht_1/ht_1.1/obj/Debug/net7.0/ht_1.1.csproj.AssemblyReference.cache
+/Users/er/CS_HT/cs_ht_1/ht_1.1/obj/Debug/net7.0/ht_1.1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/er/CS_HT/cs_ht_1/ht_1.1/obj/Debug/net7.0/ht_1.1.AssemblyInfoInputs.cache
+/Users/er/CS_HT/cs_ht_1/ht_1.1/obj/Debug/net7.0/ht_1.1.AssemblyInfo.cs
+/Users/er/CS_HT/cs_ht_1/ht_1.1/obj/Debug/net7.0/ht_1.1.csproj.CoreCompileInputs.cache
+/Users/er/CS_HT/cs_ht_1/ht_1.1/bin/Debug/net7.0/ht_1.1
+/Users/er/CS_HT/cs_ht_1/ht_1.1/bin/Debug/net7.0/ht_1.1.deps.json
+/Users/er/CS_HT/cs_ht_1/ht_1.1/bin/Debug/net7.0/ht_1.1.runtimeconfig.json
+/Users/er/CS_HT/cs_ht_1/ht_1.1/bin/Debug/net7.0/ht_1.1.dll
+/Users/er/CS_HT/cs_ht_1/ht_1.1/bin/Debug/net7.0/ht_1.1.pdb
+/Users/er/CS_HT/cs_ht_1/ht_1.1/obj/Debug/net7.0/ht_1.1.dll
+/Users/er/CS_HT/cs_ht_1/ht_1.1/obj/Debug/net7.0/refint/ht_1.1.dll
+/Users/er/CS_HT/cs_ht_1/ht_1.1/obj/Debug/net7.0/ht_1.1.pdb
+/Users/er/CS_HT/cs_ht_1/ht_1.1/obj/Debug/net7.0/ht_1.1.genruntimeconfig.cache
+/Users/er/CS_HT/cs_ht_1/ht_1.1/obj/Debug/net7.0/ref/ht_1.1.dll
