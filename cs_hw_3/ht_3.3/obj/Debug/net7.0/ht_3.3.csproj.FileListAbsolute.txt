@@ -1,0 +1,15 @@
+/Users/er/CS_HT/HmWk_Cs/hw_3/ht_3.3/bin/Debug/net7.0/ht_3.3
+/Users/er/CS_HT/HmWk_Cs/hw_3/ht_3.3/bin/Debug/net7.0/ht_3.3.deps.json
+/Users/er/CS_HT/HmWk_Cs/hw_3/ht_3.3/bin/Debug/net7.0/ht_3.3.runtimeconfig.json
+/Users/er/CS_HT/HmWk_Cs/hw_3/ht_3.3/bin/Debug/net7.0/ht_3.3.dll
+/Users/er/CS_HT/HmWk_Cs/hw_3/ht_3.3/bin/Debug/net7.0/ht_3.3.pdb
+/Users/er/CS_HT/HmWk_Cs/hw_3/ht_3.3/obj/Debug/net7.0/ht_3.3.csproj.AssemblyReference.cache
+/Users/er/CS_HT/HmWk_Cs/hw_3/ht_3.3/obj/Debug/net7.0/ht_3.3.GeneratedMSBuildEditorConfig.editorconfig
+/Users/er/CS_HT/HmWk_Cs/hw_3/ht_3.3/obj/Debug/net7.0/ht_3.3.AssemblyInfoInputs.cache
+/Users/er/CS_HT/HmWk_Cs/hw_3/ht_3.3/obj/Debug/net7.0/ht_3.3.AssemblyInfo.cs
+/Users/er/CS_HT/HmWk_Cs/hw_3/ht_3.3/obj/Debug/net7.0/ht_3.3.csproj.CoreCompileInputs.cache
+/Users/er/CS_HT/HmWk_Cs/hw_3/ht_3.3/obj/Debug/net7.0/ht_3.3.dll
+/Users/er/CS_HT/HmWk_Cs/hw_3/ht_3.3/obj/Debug/net7.0/refint/ht_3.3.dll
+/Users/er/CS_HT/HmWk_Cs/hw_3/ht_3.3/obj/Debug/net7.0/ht_3.3.pdb
+/Users/er/CS_HT/HmWk_Cs/hw_3/ht_3.3/obj/Debug/net7.0/ht_3.3.genruntimeconfig.cache
+/Users/er/CS_HT/HmWk_Cs/hw_3/ht_3.3/obj/Debug/net7.0/ref/ht_3.3.dll
