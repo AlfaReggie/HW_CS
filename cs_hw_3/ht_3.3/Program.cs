@@ -11,6 +11,7 @@ while (true)
     }
     else if (user_answ.ToLower() == "n")
     {
+        Console.WriteLine("Enter number: ");
         string user_num = Console.ReadLine();
             try
             {
