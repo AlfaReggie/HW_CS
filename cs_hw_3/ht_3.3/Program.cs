@@ -4,19 +4,19 @@ while (true)
 {
     Console.WriteLine("Enter 'n' if you want start or enter 'q' to stop: ");
     string user_answ = Console.ReadLine();
-    if (user_answ.ToLower() == "q")
+    if(user_answ.ToLower() == "q")
     {
         Console.WriteLine("Ok, Bye!");
         break; 
     }
-    else if (user_answ.ToLower() == "n")
+    else if(user_answ.ToLower() == "n")
     {
         Console.WriteLine("Enter number: ");
         string user_num = Console.ReadLine();
             try
             {
-                int u_num = Int32.Parse(user_num);
-                for (int idx = 1; idx <= u_num; idx++)
+                int num = Int32.Parse(user_num);
+                for(int idx = 1; idx <= num; idx++)
                 {
                     Console.Write($"{Math.Pow(idx, 3)}, ");
                 }

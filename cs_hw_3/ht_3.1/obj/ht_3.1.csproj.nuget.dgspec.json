@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/er/CS_HT/HmWk_Cs/hw_3/ht_3.1/ht_3.1.csproj": {}
+    "/Users/er/CS_HT/HmWk_Cs/allHW_CS/cs_hw_3/ht_3.1/ht_3.1.csproj": {}
   },
   "projects": {
-    "/Users/er/CS_HT/HmWk_Cs/hw_3/ht_3.1/ht_3.1.csproj": {
+    "/Users/er/CS_HT/HmWk_Cs/allHW_CS/cs_hw_3/ht_3.1/ht_3.1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/er/CS_HT/HmWk_Cs/hw_3/ht_3.1/ht_3.1.csproj",
+        "projectUniqueName": "/Users/er/CS_HT/HmWk_Cs/allHW_CS/cs_hw_3/ht_3.1/ht_3.1.csproj",
         "projectName": "ht_3.1",
-        "projectPath": "/Users/er/CS_HT/HmWk_Cs/hw_3/ht_3.1/ht_3.1.csproj",
+        "projectPath": "/Users/er/CS_HT/HmWk_Cs/allHW_CS/cs_hw_3/ht_3.1/ht_3.1.csproj",
         "packagesPath": "/Users/er/.nuget/packages/",
-        "outputPath": "/Users/er/CS_HT/HmWk_Cs/hw_3/ht_3.1/obj/",
+        "outputPath": "/Users/er/CS_HT/HmWk_Cs/allHW_CS/cs_hw_3/ht_3.1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/er/.nuget/NuGet/NuGet.Config"
