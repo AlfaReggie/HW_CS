@@ -1,0 +1,15 @@
+C:\Users\tulya\HW_CS\HW_CS\cs_hw_4\ht_4.6\obj\Debug\net7.0\ht_4.6.csproj.AssemblyReference.cache
+C:\Users\tulya\HW_CS\HW_CS\cs_hw_4\ht_4.6\obj\Debug\net7.0\ht_4.6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tulya\HW_CS\HW_CS\cs_hw_4\ht_4.6\obj\Debug\net7.0\ht_4.6.AssemblyInfoInputs.cache
+C:\Users\tulya\HW_CS\HW_CS\cs_hw_4\ht_4.6\obj\Debug\net7.0\ht_4.6.AssemblyInfo.cs
+C:\Users\tulya\HW_CS\HW_CS\cs_hw_4\ht_4.6\obj\Debug\net7.0\ht_4.6.csproj.CoreCompileInputs.cache
+C:\Users\tulya\HW_CS\HW_CS\cs_hw_4\ht_4.6\bin\Debug\net7.0\ht_4.6.exe
+C:\Users\tulya\HW_CS\HW_CS\cs_hw_4\ht_4.6\bin\Debug\net7.0\ht_4.6.deps.json
+C:\Users\tulya\HW_CS\HW_CS\cs_hw_4\ht_4.6\bin\Debug\net7.0\ht_4.6.runtimeconfig.json
+C:\Users\tulya\HW_CS\HW_CS\cs_hw_4\ht_4.6\bin\Debug\net7.0\ht_4.6.dll
+C:\Users\tulya\HW_CS\HW_CS\cs_hw_4\ht_4.6\bin\Debug\net7.0\ht_4.6.pdb
+C:\Users\tulya\HW_CS\HW_CS\cs_hw_4\ht_4.6\obj\Debug\net7.0\ht_4.6.dll
+C:\Users\tulya\HW_CS\HW_CS\cs_hw_4\ht_4.6\obj\Debug\net7.0\refint\ht_4.6.dll
+C:\Users\tulya\HW_CS\HW_CS\cs_hw_4\ht_4.6\obj\Debug\net7.0\ht_4.6.pdb
+C:\Users\tulya\HW_CS\HW_CS\cs_hw_4\ht_4.6\obj\Debug\net7.0\ht_4.6.genruntimeconfig.cache
+C:\Users\tulya\HW_CS\HW_CS\cs_hw_4\ht_4.6\obj\Debug\net7.0\ref\ht_4.6.dll
