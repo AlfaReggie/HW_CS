@@ -19,22 +19,8 @@ void prntArry(int[] array)
     }
 }
 
+int[] array_1 = new int[8];
 
+randArr(array_1);
+prntArry(array_1);
 
-while(true)
-{   
-    Console.WriteLine("Enter number or enter 'q' to stop: ");
-    string user_answ = Console.ReadLine();
-    if(user_answ.ToLower() == "q")
-    {
-        Console.WriteLine("Ok, Bye!");
-        break; 
-    }
-    else
-    {
-        int[] array_1 = new int[8];
-        randArr(array_1);
-        prntArry(array_1);
-        continue;
-    }
-}
