@@ -1,0 +1,15 @@
+/Users/er/CS_HT/HmWk_Cs/allHW_CS/cs_hw_5/ht_5.8/obj/Debug/net7.0/ht_5.8.csproj.AssemblyReference.cache
+/Users/er/CS_HT/HmWk_Cs/allHW_CS/cs_hw_5/ht_5.8/obj/Debug/net7.0/ht_5.8.GeneratedMSBuildEditorConfig.editorconfig
+/Users/er/CS_HT/HmWk_Cs/allHW_CS/cs_hw_5/ht_5.8/obj/Debug/net7.0/ht_5.8.AssemblyInfoInputs.cache
+/Users/er/CS_HT/HmWk_Cs/allHW_CS/cs_hw_5/ht_5.8/obj/Debug/net7.0/ht_5.8.AssemblyInfo.cs
+/Users/er/CS_HT/HmWk_Cs/allHW_CS/cs_hw_5/ht_5.8/obj/Debug/net7.0/ht_5.8.csproj.CoreCompileInputs.cache
+/Users/er/CS_HT/HmWk_Cs/allHW_CS/cs_hw_5/ht_5.8/bin/Debug/net7.0/ht_5.8
+/Users/er/CS_HT/HmWk_Cs/allHW_CS/cs_hw_5/ht_5.8/bin/Debug/net7.0/ht_5.8.deps.json
+/Users/er/CS_HT/HmWk_Cs/allHW_CS/cs_hw_5/ht_5.8/bin/Debug/net7.0/ht_5.8.runtimeconfig.json
+/Users/er/CS_HT/HmWk_Cs/allHW_CS/cs_hw_5/ht_5.8/bin/Debug/net7.0/ht_5.8.dll
+/Users/er/CS_HT/HmWk_Cs/allHW_CS/cs_hw_5/ht_5.8/bin/Debug/net7.0/ht_5.8.pdb
+/Users/er/CS_HT/HmWk_Cs/allHW_CS/cs_hw_5/ht_5.8/obj/Debug/net7.0/ht_5.8.dll
+/Users/er/CS_HT/HmWk_Cs/allHW_CS/cs_hw_5/ht_5.8/obj/Debug/net7.0/refint/ht_5.8.dll
+/Users/er/CS_HT/HmWk_Cs/allHW_CS/cs_hw_5/ht_5.8/obj/Debug/net7.0/ht_5.8.pdb
+/Users/er/CS_HT/HmWk_Cs/allHW_CS/cs_hw_5/ht_5.8/obj/Debug/net7.0/ht_5.8.genruntimeconfig.cache
+/Users/er/CS_HT/HmWk_Cs/allHW_CS/cs_hw_5/ht_5.8/obj/Debug/net7.0/ref/ht_5.8.dll
