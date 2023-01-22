@@ -1,20 +1,105 @@
-﻿/* Задача 34: Задайте массив заполненный случайными положительными трёхзначными числами. Напишите программу, которая покажет количество чётных чисел в массиве.
+﻿// Задача 34: Задайте массив заполненный случайными положительными трёхзначными числами.
+// Напишите программу, которая покажет количество чётных чисел в массиве.
 
-[345, 897, 568, 234] -> 2
+void evenCount(int[] array)
+{
+    Console.WriteLine($"User enter: {String.Join(", ", array)}");
+    int evnCnt = 0;
+    for(int idx = 0; idx < array.Length; idx++)
+    {
+        if(array[idx] % 2  == 0)
+        {
+            evnCnt++;
+        }
+    }
+    Console.WriteLine($"Even count: {evnCnt}");
+}
 
-Задача 35: Задайте одномерный массив из 123 случайных чисел в диапазоне [0, 150]. Найдите количество элементов массива, значения которых лежат в отрезке [10,99].
-Пример для массива из 5, а не 123 элементов. В своём решении сделайте для 123
-[5, 18, 123, 6, 2] -> 1
-[1, 2, 3, 6, 2] -> 0
-[10, 11, 12, 13, 14] -> 5
+int[] userArray(int arrSize)
+{
+    int[] array = new int[arrSize];
+    for(int idx = 0; idx < arrSize; idx++)
+    {
+        int nextEl = nextElArr($"Enter {idx + 1} element: ");
+        array[idx] = nextEl;
+    }
+    return array;
+}
 
-Задача 36: Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих на нечётных позициях.
+int nextElArr(string massage)
+{
+    Console.WriteLine(massage);
+    bool resVal = false;
+    int num = 0;
+    while(true)
+    {
+        string elem = Console.ReadLine();
+        resVal = inpValid(elem);
+        if(resVal == true)
+        {
+            num = Int32.Parse(elem);
+            break;
+        }
+        else
+        {
+            Console.WriteLine("Enter error! Try again!");
+            continue;
+        }       
+    }
+    return num;
+}
 
-[3, 7, 23, 12] -> 19
+bool inpValid(string num)
+{
+    bool res_val = int.TryParse(num, out int res_num);
+    if(res_val == true & res_num.ToString().Length == 3)
+    {   
+        return true;
+    }   
+    else
+    {
+        return false;
+    }
+}
 
-[-4, -6, 89, 6] -> 0
+bool sizValid(string num)
+{
+    bool res_val = int.TryParse(num, out int res_num);
+    if(res_val == true)
+    {   
+        return true;
+    }   
+    else
+    {
+        return false;
+    }
+}
 
-Задача 38: Задайте массив натуральных чисел. Найдите разницу между максимальным и минимальным элементов массива.
+int sizArr = 0;
+string arrSz = "";
 
-[3 7 22 2 78] -> 76
-*/
+while(true)
+{
+    Console.WriteLine("Enter array size or enter 'q' for stop: ");
+    arrSz = Console.ReadLine();
+    if(arrSz.ToLower() == "q")
+    {
+        Console.WriteLine("Bye!");
+        break;
+    }
+    else
+    {
+        bool result_01 = sizValid(arrSz);
+        if(result_01 == true)
+        {
+            sizArr = Int32.Parse(arrSz);
+        }
+        else
+        {
+            Console.WriteLine("Error enter!");
+        }
+
+        int[] array_01 = userArray(sizArr);
+        evenCount(array_01);
+    }    
+}

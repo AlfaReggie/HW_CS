@@ -35,13 +35,12 @@ int nextElArr(string massage)
 
 bool inpValid(string num)
 {
-    int res_num = 0;
-    try
-    {
-        res_num = Int32.Parse(num);
+    bool res_val = int.TryParse(num, out int res_num);
+    if(res_val == true)
+    {   
         return true;
-    }
-    catch
+    }   
+    else
     {
         return false;
     }
@@ -59,26 +58,53 @@ bool checkForPos(int num)
     }
 }
 
-int[] ElSum(int[] randArr)
+int[] resArray(int[] usrArr, int szARR)
 {
-    int[] resF = {0, 0};
-    for(int idx = 0; idx < randArr.Length; idx++)
+    int[] resAr = new int[szARR];
+    for(int idx = 0; idx < szARR; idx++)
     {
-        bool valRes = checkForPos(randArr[idx]);
+        bool valRes = checkForPos(usrArr[idx]);
         if(valRes == false)
         {
-            resF[1] += randArr[idx];
+            resAr[idx] = -usrArr[idx];
         }
         else
         {
-            resF[0] += randArr[idx]; 
+            resAr[idx] = -usrArr[idx]; 
         }
     }
-    return resF;
+    return resAr;
 }
 
-int[] userArr = userArray(12);
-int[] resultSum = ElSum(userArr);
+int sizArr = 0;
+string arrSz = "";
 
-Console.WriteLine(string.Join(", ", userArr));
-Console.WriteLine(string.Join(", ", resultSum));
+while(arrSz != "q")
+{
+    Console.WriteLine("Enter array size or enter 'q' for stop: ");
+    arrSz = Console.ReadLine();
+    if(arrSz.ToLower() == "q")
+    {
+        Console.WriteLine("Bye!");
+        break;
+    }
+    else
+    {
+        bool sizeArr = inpValid(arrSz);
+        if(sizeArr == true)
+        {
+            sizArr = Int32.Parse(arrSz);
+        }
+        else
+        {
+            Console.WriteLine("Error enter!");
+        }
+        int[] userArr = userArray(sizArr);
+        int[] resultArr = resArray(userArr, sizArr);
+        Console.WriteLine(string.Join(", ", userArr));
+        Console.WriteLine(string.Join(", ", resultArr));
+    }
+}
+
+
+
