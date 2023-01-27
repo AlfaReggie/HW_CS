@@ -26,9 +26,9 @@ void printMtrx(double[,] matrix, int[] coords)
         }
         Console.Write("\n");
     }
-    if(coords[0] <= matrix.GetLength(0) && coords[1] <= matrix.GetLength(1))
+    if((coords[0]) < matrix.GetLength(0) & (coords[1]) < matrix.GetLength(1))
     {
-        Console.Write($"\nElement with coords - ({coords[0]}, {coords[1]}) = {matrix[coords[0], coords[1]]}");
+        Console.Write($"\nElement with coords - ({coords[0] + 1}, {coords[1] + 1}) = {matrix[coords[0], coords[1]]}");
     }
     else
     {
@@ -36,12 +36,12 @@ void printMtrx(double[,] matrix, int[] coords)
     }
 }
 
-int[] userArray(string[] array)
+int[] userArray(string[] array, Func<string, int> f)
 {
     int[] array_01 = new int[array.Length];
     for(int idx = 0; idx < array.Length; idx++)
     {
-        int nextEl = nextElArrSize($"Enter {array[idx]}: ");
+        int nextEl = f($"Enter {array[idx]}: ");
         array_01[idx] = nextEl;
     }
     return array_01;
@@ -49,95 +49,57 @@ int[] userArray(string[] array)
 
 int nextElArrSize(string massage)
 {
-    Console.WriteLine(massage);
+    Console.Write(massage);
+    int num = -1;
     bool resVal = false;
-    int num = 0;
-    while(resVal == false)
+    while(resVal == false || num < 0)
     {
         string elem = Console.ReadLine();
-        resVal = inpValidSize(elem);
-        if(resVal == true)
-        {
-            num = Int32.Parse(elem);
-        }
-        else
+        resVal = Int32.TryParse(elem, out num);
+        if(resVal == false || num < 0)
         {
             Console.WriteLine("Enter error! Try again!");
-            continue;
-        }      
+        }
     }
     return num;
-}
-
-bool inpValidSize(string num)
-{
-    bool res_val = Int32.TryParse(num, out int res_num);
-    if(res_val == true)
-    {
-        if(res_num > 0)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-    }   
-    else
-    {
-        return false;
-    }
-}
-
-int[] userArrayBord(string[] array)
-{
-    int[] array_01 = new int[array.Length];
-    for(int idx = 0; idx < array.Length; idx++)
-    {
-        int nextEl = nextElArrBord($"Enter {array[idx]}: ");
-        array_01[idx] = nextEl;
-    }
-    return array_01;
 }
 
 int nextElArrBord(string massage)
 {
-    Console.WriteLine(massage);
-    bool resVal = false;
+    Console.Write(massage);
     int num = 0;
+    bool resVal = false;
     while(resVal == false)
     {
         string elem = Console.ReadLine();
-        resVal = inpValidBord(elem);
-        if(resVal == true)
-        {
-            num = Int32.Parse(elem);
-        }
-        else
+        resVal = Int32.TryParse(elem, out num);
+        if(resVal == false)
         {
             Console.WriteLine("Enter error! Try again!");
-            continue;
         }      
     }
     return num;
 }
 
-bool inpValidBord(string num)
+int nextElArrCoords(string massage)
 {
-    bool res_val = Int32.TryParse(num, out int res_num);
-    if(res_val == true)
+    Console.Write(massage);
+    int num = 0;
+    bool resVal = false;
+    while(resVal == false || num < 1)
     {
-        return true;
-    }   
-    else
-    {
-        return false;
+        string elem = Console.ReadLine();
+        resVal = Int32.TryParse(elem, out num);
+        if(resVal == false || num < 1)
+        {
+            Console.WriteLine("Enter error! Try again! Remember, position can't zero!");
+        }      
     }
+    return num - 1;
 }
 
 while(true)
 {
-    Console.Write("\n");
     Console.WriteLine("\nEnter 's' to start or enter 'q' to stop: ");
     string usrQuest = Console.ReadLine();
     if(usrQuest.ToLower() == "q")
@@ -148,13 +110,13 @@ while(true)
     else if(usrQuest.ToLower() == "s")
     {
         string[] usArrayStrSize = {"cols", "rows"};
-        int[] usArrayIntSize = userArray(usArrayStrSize);
-        string[] usArrayStrBotd = {"min border", "max border"};
-        int[] usArrayIntBord = userArrayBord(usArrayStrBotd);
+        int[] usArrayIntSize = userArray(usArrayStrSize, nextElArrSize);
+        string[] usArrayStrBord = {"min border", "max border"};
+        int[] usArrayIntBord = userArray(usArrayStrBord, nextElArrBord);
         double[,] matriX = getRandMatrix(usArrayIntSize, usArrayIntBord);
         Console.WriteLine("\nTest check position element: ");
         string[] coorArrayStr = {"axis X", "axis Y"};
-        int[] res_val = userArray(coorArrayStr);
+        int[] res_val = userArray(coorArrayStr, nextElArrCoords);
         printMtrx(matriX, res_val);
     }    
 }

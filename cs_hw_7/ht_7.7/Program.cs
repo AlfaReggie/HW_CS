@@ -16,14 +16,14 @@ int[,] getRandMatrix(int[] sizeArray, int[] bordArray)
 
 void printMean(int[,] matrix)
 {
-    int count = 0;
-    var averages = matrix.Cast<int>()
-                    .GroupBy(x => count++ / matrix.GetLength(1))
-                    .Select(g => g.Average())
-                    .ToArray();
-    for(int idx = 0; idx < averages.Length; idx++)
+    for (int i = 0; i < matrix.GetLength(1); i++)
     {
-        Console.WriteLine($"Average value {idx + 1} row: {averages[idx]}");
+        double sum = 0.0;
+        for (int j = 0; j < matrix.GetLength(0); j++)
+        {
+            sum += matrix[j, i];
+        }
+        Console.WriteLine($"Average values {i + 1} column = {Math.Round(sum/matrix.GetLength(0), 3)}");
     }
 }
 
@@ -39,12 +39,12 @@ void printMtrx(int[,] matrix)
     }
 }
 
-int[] userArray(string[] array)
+int[] userArray(string[] array, Func<string, int> f)
 {
     int[] array_01 = new int[array.Length];
     for(int idx = 0; idx < array.Length; idx++)
     {
-        int nextEl = nextElArrSize($"Enter {array[idx]}: ");
+        int nextEl = f($"Enter {array[idx]}: ");
         array_01[idx] = nextEl;
     }
     return array_01;
@@ -55,52 +55,16 @@ int nextElArrSize(string massage)
     Console.WriteLine(massage);
     bool resVal = false;
     int num = 0;
-    while(resVal == false)
+    while(resVal == false || num < 0)
     {
         string elem = Console.ReadLine();
-        resVal = inpValidSize(elem);
-        if(resVal == true)
-        {
-            num = Int32.Parse(elem);
-        }
-        else
+        resVal = Int32.TryParse(elem, out num);
+        if(resVal == false || num < 0)
         {
             Console.WriteLine("Enter error! Try again!");
-            continue;
-        }      
+        }
     }
     return num;
-}
-
-bool inpValidSize(string num)
-{
-    bool res_val = Int32.TryParse(num, out int res_num);
-    if(res_val == true)
-    {
-        if(res_num > 0)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-    }   
-    else
-    {
-        return false;
-    }
-}
-
-int[] userArrayBord(string[] array)
-{
-    int[] array_01 = new int[array.Length];
-    for(int idx = 0; idx < array.Length; idx++)
-    {
-        int nextEl = nextElArrBord($"Enter {array[idx]}: ");
-        array_01[idx] = nextEl;
-    }
-    return array_01;
 }
 
 int nextElArrBord(string massage)
@@ -111,31 +75,13 @@ int nextElArrBord(string massage)
     while(resVal == false)
     {
         string elem = Console.ReadLine();
-        resVal = inpValidBord(elem);
-        if(resVal == true)
-        {
-            num = Int32.Parse(elem);
-        }
-        else
+        resVal = Int32.TryParse(elem, out num);
+        if(resVal == false)
         {
             Console.WriteLine("Enter error! Try again!");
-            continue;
-        }      
+        }  
     }
     return num;
-}
-
-bool inpValidBord(string num)
-{
-    bool res_val = Int32.TryParse(num, out int res_num);
-    if(res_val == true)
-    {
-        return true;
-    }   
-    else
-    {
-        return false;
-    }
 }
 
 while(true)
@@ -150,10 +96,10 @@ while(true)
     }
     else if(usrQuest.ToLower() == "s")
     {
-        string[] usArrayStrSize = {"cols", "rows"};
-        int[] usArrayIntSize = userArray(usArrayStrSize);
-        string[] usArrayStrBotd = {"min border", "max border"};
-        int[] usArrayIntBord = userArrayBord(usArrayStrBotd);
+        string[] usArrayStrSize = {"rows", "cols"};
+        int[] usArrayIntSize = userArray(usArrayStrSize, nextElArrSize);
+        string[] usArrayStrBord = {"min border", "max border"};
+        int[] usArrayIntBord = userArray(usArrayStrBord, nextElArrBord);
         int[,] matriX = getRandMatrix(usArrayIntSize, usArrayIntBord);
         printMtrx(matriX);
         printMean(matriX);
