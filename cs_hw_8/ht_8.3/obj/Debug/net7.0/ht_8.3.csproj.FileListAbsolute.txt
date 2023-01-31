@@ -1,0 +1,15 @@
+C:\Users\tulya\HW_CS\HW_CS\cs_hw_8\ht_8.3\bin\Debug\net7.0\ht_8.3.exe
+C:\Users\tulya\HW_CS\HW_CS\cs_hw_8\ht_8.3\bin\Debug\net7.0\ht_8.3.deps.json
+C:\Users\tulya\HW_CS\HW_CS\cs_hw_8\ht_8.3\bin\Debug\net7.0\ht_8.3.runtimeconfig.json
+C:\Users\tulya\HW_CS\HW_CS\cs_hw_8\ht_8.3\bin\Debug\net7.0\ht_8.3.dll
+C:\Users\tulya\HW_CS\HW_CS\cs_hw_8\ht_8.3\bin\Debug\net7.0\ht_8.3.pdb
+C:\Users\tulya\HW_CS\HW_CS\cs_hw_8\ht_8.3\obj\Debug\net7.0\ht_8.3.csproj.AssemblyReference.cache
+C:\Users\tulya\HW_CS\HW_CS\cs_hw_8\ht_8.3\obj\Debug\net7.0\ht_8.3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tulya\HW_CS\HW_CS\cs_hw_8\ht_8.3\obj\Debug\net7.0\ht_8.3.AssemblyInfoInputs.cache
+C:\Users\tulya\HW_CS\HW_CS\cs_hw_8\ht_8.3\obj\Debug\net7.0\ht_8.3.AssemblyInfo.cs
+C:\Users\tulya\HW_CS\HW_CS\cs_hw_8\ht_8.3\obj\Debug\net7.0\ht_8.3.csproj.CoreCompileInputs.cache
+C:\Users\tulya\HW_CS\HW_CS\cs_hw_8\ht_8.3\obj\Debug\net7.0\ht_8.3.dll
+C:\Users\tulya\HW_CS\HW_CS\cs_hw_8\ht_8.3\obj\Debug\net7.0\refint\ht_8.3.dll
+C:\Users\tulya\HW_CS\HW_CS\cs_hw_8\ht_8.3\obj\Debug\net7.0\ht_8.3.pdb
+C:\Users\tulya\HW_CS\HW_CS\cs_hw_8\ht_8.3\obj\Debug\net7.0\ht_8.3.genruntimeconfig.cache
+C:\Users\tulya\HW_CS\HW_CS\cs_hw_8\ht_8.3\obj\Debug\net7.0\ref\ht_8.3.dll
