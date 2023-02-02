@@ -17,40 +17,40 @@ void printMtrx(string[,] matrix)
     }
 }
 
-string[,] FillImage(int row, int col)
+string[,] FillImage(int row, int col) //функция заполнения массива по часовой спиральной стрелке
 {
-    string[,] fillMatrx = new string[row, col]; 
-    int x = 0;
-    int y = 0;
-    int dx = 0;
-    int dy = 1;
-    int dirChanges = 0;
-    int visits = col;
+    string[,] fillMatrx = new string[row, col]; //иниициализируем новый двумерный массив
+    int x = 0;  //координата строки
+    int y = 0;  //координата столбца 
+    int dx = 0; //переменная изменения координаты строки
+    int dy = 1; //переменная изменения координаты столбца
+    int dirChanges = 0; //переменная промежуточного РАСЧЕТА строк/колонок до смены плоскости движения координат
+    int visits = col;   //счетчик промежуточного ПОДСЧЕТА строк/колонок до смены плоскости движения координат
 
-    for (int i = 0; i < fillMatrx.Length; i++) 
+    for (int i = 0; i < fillMatrx.Length; i++) //цикл
     {
-        visits--;
+        visits--;   //уменьшение счетчика
         
-        if(i < 9)
+        if(i < 9)   //проверка на необходимость дополнения строки
         {
-            fillMatrx[x, y] = $"0{(i + 1).ToString()}";
+            fillMatrx[x, y] = $"0{(i + 1).ToString()}"; 
         }
         else
         {
             fillMatrx[x, y] = (i + 1).ToString();
         }
         
-        if (visits == 0) 
+        if (visits == 0) //проверка последнего значения строки/колонки
         {
-            visits = col * (dirChanges % 2) + row * ((dirChanges + 1) % 2) - (dirChanges / 2 - 1) - 2;
-            int temp = dy;
-            dy = -dx;
-            dx = temp;
+            visits = col * (dirChanges % 2) + row * ((dirChanges + 1) % 2) - (dirChanges / 2 - 1) - 2;  //расчет промежуточного остатка количества шагов движения
+            int temp = dy;  //параллельное переназначение переменных для движения по координатам 
+            dy = -dx;   //отрицательные значения для движения в сторону 0 координат строк/столбцов
+            dx = temp;  //___________
             dirChanges++;
         }
 
-        x += dx;
-        y += dy;
+        x += dx;    //смена координаты строки  
+        y += dy;    //смена координаты столбца
     }
     return fillMatrx;
 }
