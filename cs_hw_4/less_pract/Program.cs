@@ -49,8 +49,6 @@ for (int y = 0; y < rows; y++)
     System.Console.WriteLine();
 }*/
 
-int[][] jaggedArray = new int[3][];
+int[] mtrx = {1, 2, 3, 4, 5};
 
-jaggedArray[0] = new int[5];
-
-Console.Write(jaggedArray[0]);
+Console.Write(mtrx[-4]);
